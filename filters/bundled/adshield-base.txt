@@ -1,0 +1,173 @@
+! AdShield Base Filters — v1.0.0
+! Curated from EasyList (CC BY-SA 3.0) and uBlock Origin filters (GPL-3.0)
+! This is a reduced starter list for Phase 2. Full EasyList integration follows.
+! Source: https://easylist.to/easylist/easylist.txt
+! Last updated: 2026-11-23
+
+! ============================================================
+! MAJOR AD NETWORKS
+! ============================================================
+
+||doubleclick.net^$script,image,xmlhttprequest,sub_frame,ping
+||googlesyndication.com^$script,image,xmlhttprequest,sub_frame
+||googleadservices.com^$script,image,xmlhttprequest
+||adnxs.com^$script,image,xmlhttprequest,sub_frame
+||advertising.com^$script,image,xmlhttprequest,sub_frame
+||ads.yahoo.com^$script,image,xmlhttprequest
+||adsystem.com^$script,image,xmlhttprequest
+||adtech.de^$script,image,xmlhttprequest
+||adtechus.com^$script,image,xmlhttprequest
+||adbrite.com^$script,image,xmlhttprequest
+||adcolony.com^$script,xmlhttprequest
+||adform.net^$script,image,xmlhttprequest
+||adformdsp.net^$script,xmlhttprequest
+||adgear.com^$script,image,xmlhttprequest
+||adition.com^$script,image,xmlhttprequest
+||adkernel.com^$script,xmlhttprequest
+||adman.gr^$script,image,xmlhttprequest
+||admaster.com.cn^$script,image,xmlhttprequest
+||adnium.com^$script,image,xmlhttprequest
+||adscale.de^$script,image,xmlhttprequest
+||adspirit.de^$script,image,xmlhttprequest
+||adspeed.com^$script,image,xmlhttprequest
+||adsrvr.org^$script,image,xmlhttprequest
+||adswizz.com^$script,xmlhttprequest
+||adtegrity.com^$script,image,xmlhttprequest
+||adthink.com^$script,xmlhttprequest
+||adtrafficquality.google^$script,xmlhttprequest
+||adtrue.com^$script,image,xmlhttprequest
+||ad.auditude.com^$script,xmlhttprequest
+||ad.zanox.com^$script,image,xmlhttprequest
+||aef.com^$script,image,xmlhttprequest
+||aolcdn.com/ads^$script,image
+||appnexus.com^$script,image,xmlhttprequest
+||atdmt.com^$script,image,xmlhttprequest,ping
+||atwola.com^$script,image,xmlhttprequest
+||awin.com^$script,image,xmlhttprequest,ping
+||awin1.com^$script,image,xmlhttprequest,ping
+
+! ============================================================
+! VIDEO AD NETWORKS
+! ============================================================
+
+||imasdk.googleapis.com^$script,xmlhttprequest
+||securepubads.g.doubleclick.net^$script,xmlhttprequest,sub_frame
+||pubads.g.doubleclick.net^$script,xmlhttprequest
+||ad.youtube.com^$xmlhttprequest
+||ad3.liverail.com^$script,xmlhttprequest
+||ads.adaptv.advertising.com^$script,xmlhttprequest
+||ads.stickyadstv.com^$script,xmlhttprequest
+||vid.springserve.com^$xmlhttprequest
+||tag.targeting.unrulymedia.com^$script
+||cdn.springserve.com^$script
+
+! ============================================================
+! PROGRAMMATIC / REAL-TIME BIDDING
+! ============================================================
+
+||rubiconproject.com^$script,image,xmlhttprequest
+||openx.net^$script,image,xmlhttprequest
+||openx.com^$script,image,xmlhttprequest
+||pubmatic.com^$script,image,xmlhttprequest
+||casalemedia.com^$script,xmlhttprequest
+||contextweb.com^$script,image,xmlhttprequest
+||criteo.com^$script,image,xmlhttprequest
+||criteo.net^$script,image,xmlhttprequest
+||lijit.com^$script,image,xmlhttprequest
+||sovrn.com^$script,xmlhttprequest
+||loopme.com^$script,xmlhttprequest
+||lkqd.net^$script,xmlhttprequest
+||sonobi.com^$script,xmlhttprequest
+||smaato.net^$script,image,xmlhttprequest
+||smartadserver.com^$script,image,xmlhttprequest
+||spotxchange.com^$script,xmlhttprequest
+||spotx.tv^$script,xmlhttprequest
+||teads.tv^$script,xmlhttprequest
+||teads.com^$script,xmlhttprequest
+||33across.com^$script,xmlhttprequest
+||triplelift.com^$script,xmlhttprequest
+||undertone.com^$script,image,xmlhttprequest
+||valueclick.com^$script,image,xmlhttprequest,ping
+||valueclick.net^$script,image,xmlhttprequest
+||vastads.net^$script,xmlhttprequest
+
+! ============================================================
+! AFFILIATE AND TRACKING AD NETWORKS
+! ============================================================
+
+||tradedoubler.com^$script,image,xmlhttprequest,ping
+||shareasale.com^$script,image,xmlhttprequest,ping
+||linksynergy.com^$script,image,xmlhttprequest,ping
+||clkmon.com^$xmlhttprequest,ping
+||clkrev.com^$xmlhttprequest,ping
+||cj.com^$script,image,xmlhttprequest,ping
+||commissionjunction.com^$script,image,xmlhttprequest,ping
+||conversantmedia.com^$script,image,xmlhttprequest
+||convrse.com^$script,xmlhttprequest
+
+! ============================================================
+! INTRUSIVE / MALVERTISING AD SERVERS
+! ============================================================
+
+||trafficjunky.net^$script,image,xmlhttprequest,sub_frame
+||traffichaus.com^$script,image,xmlhttprequest,sub_frame
+||juicyads.com^$script,image,xmlhttprequest,sub_frame
+||exoclick.com^$script,image,xmlhttprequest,sub_frame
+||exosrv.com^$script,image,xmlhttprequest
+||adxpansion.com^$script,image,xmlhttprequest,sub_frame
+||eroadvertising.com^$script,image,xmlhttprequest
+||plugrush.com^$script,image,xmlhttprequest,sub_frame
+||tsyndicate.com^$script,image,xmlhttprequest
+||adtng.com^$script,image,xmlhttprequest,sub_frame
+||ero-advertising.com^$script,image,xmlhttprequest,sub_frame
+
+! ============================================================
+! COMMON AD CONTAINER PATTERNS
+! ============================================================
+
+/ad_banner/*$image
+/ads/banner/*$image
+/banners/ads/*$image
+/advert/*$script,image
+/advertisements/*$script,image
+/ad-manager/*$script
+/adserver/*$script,image,xmlhttprequest
+/adservice/*$script,xmlhttprequest
+/ad-container/*$sub_frame
+/adframe/*$sub_frame
+/adsense/*$script
+/adslot/*$script
+
+! ============================================================
+! COSMETIC FILTERS — COMMON AD CONTAINERS
+! ============================================================
+
+##.ad-banner
+##.ad-container
+##.ad-slot
+##.ad-wrapper
+##.ad-block
+##.ad-unit
+##.ad-box
+##.adsbygoogle
+##.ads-container
+##.ads-wrapper
+##.advertisement
+##.advertisements
+##.advertising
+##.sponsored-content
+##.sponsored-links
+##.sponsor-block
+##[id^="ad-"]
+##[id^="ads-"]
+##[id^="google_ads_"]
+##[id^="div-gpt-ad"]
+##[class^="ad-"]
+##[class*="-advertisement"]
+##[class*="__ads"]
+##[data-ad-slot]
+##[data-ad-unit]
+##[data-google-query-id]
+##iframe[src*="doubleclick"]
+##iframe[src*="googlesyndication"]
+##iframe[id*="google_ads"]

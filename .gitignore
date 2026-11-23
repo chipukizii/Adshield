@@ -43,3 +43,6 @@ logs/
 tmp/
 temp/
 scratch/
+
+# ─── Chrome extension generated metadata ──────────────────────────────────────
+_metadata/

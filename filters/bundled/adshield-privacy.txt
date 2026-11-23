@@ -1,0 +1,137 @@
+! AdShield Privacy Filters — v1.0.0
+! Curated from EasyPrivacy (CC BY-SA 3.0) and Peter Lowe's list
+! Source: https://easylist.to/easylist/easyprivacy.txt
+! Last updated: 2026-11-23
+
+! ============================================================
+! ANALYTICS AND TRACKING
+! ============================================================
+
+||google-analytics.com^$script,image,xmlhttprequest,ping
+||googletagmanager.com/gtag^$script
+||googletagservices.com^$script,xmlhttprequest
+||analytics.google.com^$xmlhttprequest,ping
+||stats.g.doubleclick.net^$xmlhttprequest,ping
+||bat.bing.com^$image,ping,xmlhttprequest
+||mc.yandex.ru^$script,image,xmlhttprequest
+||mc.yandex.com^$script,image,xmlhttprequest
+||metrika.yandex.ru^$script,xmlhttprequest
+||pixel.facebook.com^$image,ping,xmlhttprequest
+||connect.facebook.net/en_US/fbevents.js$script
+||tr.snapchat.com^$image,ping,xmlhttprequest
+||sc-static.net/scevent.min.js$script
+||ads-twitter.com^$script,image,xmlhttprequest,ping
+||t.co/i/^$image,ping
+||linkedin.com/px^$image,ping,xmlhttprequest
+||px.ads.linkedin.com^$image,ping,xmlhttprequest
+||analytics.tiktok.com^$script,xmlhttprequest
+||business-api.tiktok.com^$script,xmlhttprequest
+||smetrics.adobe.com^$script,xmlhttprequest
+||omtrdc.net^$script,xmlhttprequest
+||demdex.net^$script,image,xmlhttprequest,ping
+||adobedtm.com^$script
+||mbox.com^$script,xmlhttprequest
+||actonsoftware.com^$script,xmlhttprequest
+
+! ============================================================
+! TRACKING PIXELS AND BEACONS
+! ============================================================
+
+||facebook.com/tr^$image,ping,xmlhttprequest
+||ad.facebook.com^$image,ping,xmlhttprequest
+||ad.doubleclick.net^$image,ping
+||pagead2.googlesyndication.com/pagead/gen_204^$ping,xmlhttprequest
+||fonts.googleapis.com/css^$stylesheet
+! Note: We do NOT block all of fonts.googleapis.com as it serves legitimate fonts
+
+! ============================================================
+! THIRD-PARTY DATA BROKERS
+! ============================================================
+
+||bluekai.com^$script,image,xmlhttprequest,ping
+||krux.com^$script,xmlhttprequest
+||krxd.net^$script,xmlhttprequest
+||lotame.com^$script,xmlhttprequest
+||lijit.com^$xmlhttprequest
+||nexac.com^$script,xmlhttprequest
+||nuggad.net^$script,xmlhttprequest
+||optimizely.com^$script,xmlhttprequest
+||perfora.net^$script,xmlhttprequest
+||pippio.com^$script,xmlhttprequest
+||quantserve.com^$script,image,xmlhttprequest,ping
+||quantcount.com^$script,xmlhttprequest,ping
+||qualtrics.com^$script,xmlhttprequest
+||raasnet.com^$script,xmlhttprequest
+||researchnow.com^$script,xmlhttprequest
+||rfihub.com^$script,image,xmlhttprequest
+||rfihub.net^$script,image,xmlhttprequest
+||richrelevance.com^$script,xmlhttprequest
+||sail-horizon.com^$script,xmlhttprequest
+||scorecard research.com^$script,image,xmlhttprequest,ping
+||scorecardresearch.com^$script,image,xmlhttprequest,ping
+||semasio.net^$script,xmlhttprequest
+
+! ============================================================
+! FINGERPRINTING AND SUPERCOOKIES
+! ============================================================
+
+||fingerprint.com^$script,xmlhttprequest
+||fingerprintjs.com^$script,xmlhttprequest
+||threatmetrix.com^$script,xmlhttprequest
+||threatmetrix.net^$script,xmlhttprequest
+||iovation.com^$script,xmlhttprequest
+||kount.net^$script,xmlhttprequest
+||darkreading.com/tracking^$xmlhttprequest
+
+! ============================================================
+! HEATMAPS AND SESSION RECORDING
+! ============================================================
+
+||hotjar.com^$script,xmlhttprequest
+||hotjar.io^$script,xmlhttprequest
+||mouseflow.com^$script,xmlhttprequest
+||mouseflow.net^$script,xmlhttprequest
+||fullstory.com^$script,xmlhttprequest
+||logrocket.com^$script,xmlhttprequest
+||logrocket.io^$script,xmlhttprequest
+||heap.io^$script,xmlhttprequest
+||heap-api.com^$script,xmlhttprequest
+||inspectlet.com^$script,xmlhttprequest
+||luckyorange.com^$script,xmlhttprequest
+||luckyorange.net^$script,xmlhttprequest
+||crazyegg.com^$script,xmlhttprequest
+||clicktale.net^$script,xmlhttprequest
+||userreplay.net^$script,xmlhttprequest
+
+! ============================================================
+! A/B TESTING WITH TRACKING
+! ============================================================
+
+||optimizely.com^$script,xmlhttprequest
+||vwo.com^$script,xmlhttprequest
+||visualwebsiteoptimizer.com^$script,xmlhttprequest
+||convert.com^$script,xmlhttprequest
+
+! ============================================================
+! PUSH NOTIFICATION AD NETWORKS
+! ============================================================
+
+||pushcrew.com^$script,xmlhttprequest
+||pushengage.com^$script,xmlhttprequest
+||pushwoosh.com^$script,xmlhttprequest
+||web-push-notifications.com^$script,xmlhttprequest
+
+! ============================================================
+! COSMETIC: TRACKING BADGES AND COOKIE CONSENT RE-ADS
+! ============================================================
+
+##.onetrust-pc-dark-filter
+##.onetrust-banner-sdk
+##.ot-sdk-container
+##[id^="cookieConsent"]
+##.cc-window
+##.cc-banner
+##.gdpr-popup
+##.cookie-law-info-bar
+##.cookie-notice
+##.cookie-popup
