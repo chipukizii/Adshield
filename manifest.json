@@ -1,0 +1,68 @@
+{
+  "manifest_version": 3,
+  "name": "AdShield",
+  "version": "0.1.0",
+  "description": "High-coverage ad blocker and privacy protection. Blocks ads, trackers, pop-ups and video overlays.",
+  "author": "AdShield Team",
+
+  "icons": {
+    "16":  "assets/icons/icon-16.png",
+    "32":  "assets/icons/icon-32.png",
+    "48":  "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  },
+
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16":  "assets/icons/icon-16.png",
+      "32":  "assets/icons/icon-32.png",
+      "48":  "assets/icons/icon-48.png",
+      "128": "assets/icons/icon-128.png"
+    },
+    "default_title": "AdShield — Ad Blocker & Privacy Protection"
+  },
+
+  "background": {
+    "service_worker": "src/background/service-worker.js",
+    "type": "module"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content/content-main.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "adshield_base_rules",
+        "enabled": true,
+        "path": "rules/base-rules.json"
+      }
+    ]
+  },
+
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/images/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

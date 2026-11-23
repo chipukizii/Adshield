@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'">
+  <title>AdShield</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <!-- ═══ Header ═══════════════════════════════════════════════════════ -->
+  <header class="header">
+    <div class="logo-row">
+      <img src="../../assets/icons/icon-48.png" alt="AdShield logo" class="logo" width="28" height="28">
+      <span class="brand-name">AdShield</span>
+      <span class="version" id="ext-version">v0.1.0</span>
+    </div>
+  </header>
+
+  <!-- ═══ Protection Toggle ════════════════════════════════════════════ -->
+  <section class="protection-section">
+    <div class="toggle-row">
+      <div class="toggle-labels">
+        <span class="toggle-title">Protection</span>
+        <span class="toggle-status" id="protection-status-text">Active</span>
+      </div>
+      <label class="toggle-switch" aria-label="Toggle protection">
+        <input type="checkbox" id="protection-toggle" checked>
+        <span class="toggle-slider"></span>
+      </label>
+    </div>
+  </section>
+
+  <!-- ═══ Stats Row ════════════════════════════════════════════════════ -->
+  <section class="stats-section">
+    <div class="stat-card">
+      <span class="stat-number" id="stat-total">—</span>
+      <span class="stat-label">Total Blocked</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-card">
+      <span class="stat-number" id="stat-today">—</span>
+      <span class="stat-label">Today</span>
+    </div>
+  </section>
+
+  <!-- ═══ Current Site ═════════════════════════════════════════════════ -->
+  <section class="site-section">
+    <div class="site-row">
+      <div class="site-info">
+        <span class="site-label">This site</span>
+        <span class="site-url" id="current-site">—</span>
+      </div>
+      <button class="whitelist-btn" id="whitelist-btn" title="Pause AdShield on this site">
+        Pause
+      </button>
+    </div>
+  </section>
+
+  <!-- ═══ Footer Actions ═══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <button class="footer-btn" id="open-dashboard">⚙ Settings</button>
+    <button class="footer-btn" id="report-issue">⚑ Report Issue</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
