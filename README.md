@@ -1,4 +1,4 @@
-# 🛡️ AdShield — Browser Extension
+# AdShield — Browser Extension
 
 > High-coverage advertisement blocking and privacy protection for Chrome.
 
