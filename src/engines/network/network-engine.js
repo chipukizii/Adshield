@@ -33,8 +33,8 @@
 
 'use strict';
 
-import { RULESET_IDS, RULE_PRIORITIES, BLOCK_CATEGORIES } from '../shared/constants.js';
-import { StorageManager } from '../shared/storage.js';
+import { RULESET_IDS, RULE_PRIORITIES, BLOCK_CATEGORIES } from '../../shared/constants.js';
+import { StorageManager } from '../../shared/storage.js';
 
 // Chrome DNR hard limits
 const DNR_LIMITS = {
